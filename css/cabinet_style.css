@@ -1,0 +1,102 @@
+.main_cabinet{
+    text-align: center;
+    padding-top: 140px;
+    min-height: calc(100vh - 50px);
+}
+.cabinet {
+    display: flex;
+    flex-direction: row;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    
+}
+.tabcontent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 89%;
+}
+
+.tabcontent table{
+    margin:15px 15px 15px 15px;
+    height: 200px;
+    width: 800px;
+    border-collapse: collapse;
+    border:1px solid #bdc3c7;
+    box-shadow:2px 2px 12px rgba(0,0,0, 0.2),-1px -1px 8px rgba(0,0,0,0.2);
+}
+.tabcontent tr{
+    transition: all .2s ease-in;
+    cursor:pointer;
+}
+.tabcontent th{
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.tabcontent td{
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.tabcontent tr:hover{
+    background-color: #f5f5f5;
+    transform: scale(1.02);
+    box-shadow:2px 2px 12px rgba(0,0,0, 0.2),-1px -1px 8px rgba(0,0,0,0.2);
+}
+@media only screen and (max-width:768px){
+    .tabcontent table{
+        width: 90%;
+    }
+}
+#header_t{
+    background-color: #16a085;
+    color: #fff;
+}
+.cabinet h1{
+    font-weight:600;
+    text-align:center;
+    background-color: #16a085;
+    color:#fff;
+    padding: 10px 0px;
+}
+
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 10%;
+  height: 100px;
+  border-right: none;
+}
+
+
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+.fa-times-circle{
+    color: red;
+}
+.fa-times-circle:hover{
+    transform: scale(1.6);
+    transition: all .2s ease-in-out;
+}
+
